@@ -33,7 +33,6 @@ export default {
   }
 
   &__image {
-    border: 1px solid blue;
     display: inline-block;
     svg {
       height: 120px;
@@ -47,7 +46,20 @@ export default {
   &__wrapper {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    justify-content: center;
+    margin-left: 1rem;
+    max-width: 300px;
+  }
+  &__hashtag {
+    h1 {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+  }
+  &__claim {
+    p {
+      font-size: 14px;
+    }
   }
 }
 
