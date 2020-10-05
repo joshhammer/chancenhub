@@ -25,10 +25,16 @@ export default {
 
 <style lang="scss" scoped>
   .header {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
-    border: 1px solid red;
+    border: 1px solid black;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+    }
   }
 </style>

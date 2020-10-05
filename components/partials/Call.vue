@@ -1,10 +1,10 @@
 <template>
   <div class="call">
-    <a href="" class="call__button">
+    <a href="https://inspiration.jvm.ch/" class="call__button">
       <span>
-        <slot></slot>
+        <slot />
       </span>
-      <span>Chancen-Call</span>
+      <span class="call__button__text">Chancen-Call</span>
     </a>
     <div class="call__help">
       <p>Wir helfen schnell und unkompliziert</p>
@@ -21,15 +21,34 @@ export default {
 
 <style lang="scss" scoped>
 .call {
+  @media (max-width: 767px) {
+        order: 1;
+        margin-bottom: 1rem;
+      }
   &__button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $dark-green;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     margin-bottom: .5rem;
     border-radius: 25px;
     max-width: 200px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    @media (max-width: 767px) {
+        padding: .5rem .75rem;
+      }
+    &:hover {
+      background-color: $mintgreen;
+      box-shadow: 0 2px 5px rgba($black, .7);
+    }
+    &__text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      @media (max-width: 767px) {
+        font-size: .9rem;
+      }
+    }
     a {
       display: flex;
       align-items: center;
@@ -51,7 +70,7 @@ export default {
     flex-direction: column;
     align-items: center;
     p, a {
-      font-size: 14px;
+      font-size: 12px;
     }
     a {
       color: $dark-green;

@@ -28,16 +28,27 @@ export default {
 .logo {
   text-decoration: none;
   color: $black;
+  @media (max-width: 767px) {
+        margin-bottom: 1rem;
+      }
   &__wrapper {
     display: flex;
   }
 
   &__image {
     display: inline-block;
+    @media (max-width: 767px) {
+        display: none;
+      }
     svg {
       height: 120px;
       width: 72px;
       color: $black;
+
+      @media (max-width: 767px) {
+        height: 60px;
+        width: 32px
+      }
     }
   }
 }
@@ -54,11 +65,19 @@ export default {
     h1 {
       text-transform: uppercase;
       font-size: 2.5rem;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
   }
   &__claim {
     p {
-      font-size: 14px;
+      font-size: 12px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
   }
 }
