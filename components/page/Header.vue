@@ -1,18 +1,21 @@
 <template>
   <header class="header">
-    <h1>Header</h1>
+    <Logo />
   </header>
 </template>
 
 <script>
+import Logo from '../partials/Logo'
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: { Logo }
 }
 </script>
 
 <style lang="scss" scoped>
   .header {
-    height: 100px;
-    border: 3px solid red;
+    padding: 2rem 1rem;
+    border: 1px solid red;
   }
 </style>

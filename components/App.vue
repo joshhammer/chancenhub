@@ -4,10 +4,10 @@
 
 <script>
 
-import Header from './Header'
+import Header from './page/Header'
 
 export default {
-  name: 'TestComponent',
+  name: 'App',
   components: { Header }
 }
 
