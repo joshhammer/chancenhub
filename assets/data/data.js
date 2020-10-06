@@ -8,7 +8,7 @@ const data = [
     text: '',
     title: 'Fit for Recovery',
     type: 'rule',
-    creationDate: new Date(2020, 9, 1),
+    creationDate: new Date(2020, 9, 1).toLocaleString(),
     id: 1
   },
   {
@@ -20,7 +20,151 @@ const data = [
     text: '',
     title: 'Fit for Recovery',
     type: 'rule',
-    creationDate: new Date(2020, 9, 2),
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 2
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Fit for Recovery',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
     id: 2
   }
 ]
