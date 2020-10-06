@@ -2,10 +2,11 @@
   <div class="content">
     <div class="content__grid">
       <Card
-        v-for="card in cards"
+        v-for="card in sortedCards"
         :key="card.id"
         :title="card.title"
         :creation-date="card.creationDate"
+        :type="card.type"
       />
     </div>
   </div>
@@ -22,6 +23,14 @@ export default {
     return {
       cards: data
     }
+  },
+  computed: {
+    sortedCards () {
+      const cards = data.sort((a, b) => {
+        return a.id > b.id ? -1 : 1
+      })
+      return cards
+    }
   }
 }
 </script>
@@ -31,31 +40,26 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 200px;
   &__grid {
     width: 100%;
     padding: 3rem;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, auto);
     grid-auto-rows: 300px;
+    @media (max-width: 1799px) {
+      grid-template-columns: repeat(4, auto);
+    }
+    @media (max-width: 1599px) {
+      grid-template-columns: repeat(3, auto);
+    }
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
-// .card {
-//   padding: 20px;
-//   background: lightgray;
-//   &__animated {
-//     display: inline-block;
-//     vertical-align: middle;
-//     transform: perspective(1px) translateZ(0);
-//     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-//     overflow: hidden;
-//     transition-duration: 0.5s;
-//     transition-property: color, background-color, box-shadow;
-//   }
-//   &__animated:hover, &__animated:focus, &__animated:active {
-//     background-color: #2098D1;
-//     color: white;
-//     box-shadow: 0 2px 10px rgba($black, 0.7);
-//   }
-// }
 </style>
