@@ -1,136 +1,80 @@
 <template>
-  <ul class="social-icons">
+  <ul class="social">
     <li>
       <a href="https://www.youtube.com/user/JvMLimmat" title="YouTube" target="_blank">
-        <i class="icon icon__youtube"></i>
+        <YouTube />
       </a>
     </li>
     <li>
       <a href="https://www.facebook.com/JungvonMatt.Limmat" title="Facebook" target="_blank">
-        <i class="icon icon__facebook"></i>
+        <Facebook />
       </a>
     </li>
     <li>
       <a href="https://twitter.com/JvM_Limmat" title="Twitter" target="_blank">
-        <i class="icon icon__twitter"></i>
+        <Twitter />
       </a>
     </li>
     <li>
       <a href="https://www.instagram.com/jungvonmattlimmat/" title="Instagram" target="_blank">
-        <i class="icon icon__instagram"></i>
+        <Instagram />
       </a>
     </li>
     <li>
-      <a
-        href="https://www.linkedin.com/company/jung-von-matt-limmat/"
-        title="LinkedIn"
-        target="_blank"
-      >
-        <i class="icon icon__linkedin"></i>
+      <a href="https://www.linkedin.com/company/jung-von-matt-limmat/" title="LinkedIn" target="_blank">
+        <LinkedIn />
       </a>
     </li>
     <li>
       <a href="https://www.xing.com/companies/jungvonmatt%2Flimmat?" title="Xing" target="_blank">
-        <i class="icon icon__xing"></i>
+        <Xing />
       </a>
     </li>
   </ul>
 </template>
 
+<script>
+import YouTube from '~/assets/images/youtube.svg?inline'
+import Facebook from '~/assets/images/facebook.svg?inline'
+import Twitter from '~/assets/images/twitter.svg?inline'
+import Instagram from '~/assets/images/instagram.svg?inline'
+import LinkedIn from '~/assets/images/linkedin.svg?inline'
+import Xing from '~/assets/images/xing.svg?inline'
+
+export default {
+  name: 'Social',
+  components: { YouTube, Facebook, Twitter, Instagram, LinkedIn, Xing }
+}
+</script>
+
 <style lang="scss" scoped>
-.social-icons {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.social {
+  list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  // @include media-breakpoint-up(sm) {
-  //   justify-content: flex-start;
-  // }
-
-  li + li {
-    margin-left: 10px;
+  border: 3px solid red;
+  margin-right: 2rem;
+  & li:not(:last-child) {
+    margin-right: 1rem;
   }
-
   a {
-    color: currentColor;
-    display: block;
-    text-decoration: none;
-    line-height: 1;
-
-    &:hover {
-      color: #00e100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba($black, 0.3);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      & svg {
+      transition: fill .3s;
+        // width: 30px;
+        // height: 30px;
+      }
+      &:hover {
+        & svg {
+          fill: lime;
+        }
+      }
     }
-  }
 }
 
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  font-size: 1.2rem;
-  transition: color, 0.3s ease;
-  border: 1px solid #c9c9c9;
-  border-radius: 50%;
-
-  .layout-type-rule & {
-    border-color: currentColor;
-  }
-
-  // @include media-breakpoint-up(md) {
-  //   width: 40px;
-  //   height: 40px;
-  //   font-size: 1.5rem;
-  // }
-}
-
-[class^="icon__"],
-[class*=" icon__"] {
-  &::before {
-    font-family: "jvm-icons";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    vertical-align: middle;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
-
-.icon__download::before {
-  content: "\e008";
-}
-.icon__mail::before {
-  content: "\e009";
-}
-.icon__phone::before {
-  content: "\e00a";
-}
-.icon__facebook::before {
-  content: "\e00b";
-}
-.icon__twitter::before {
-  content: "\e00c";
-}
-.icon__youtube::before {
-  content: "\e00d";
-}
-.icon__linkedin::before {
-  content: "\e00e";
-}
-.icon__instagram::before {
-  content: "\e00f";
-}
-.icon__xing::before {
-  content: "\e010";
-}
-.icon__clock:before {
-  content: "\e011";
-}
 </style>

@@ -41,13 +41,16 @@ export default {
   }
   & h1 {
     color: $white;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    @media (max-width: 2199px) {
+      font-size: 2.15rem;
+    }
     @media (max-width: 1199px) {
       font-size: 2.75rem;
     }
     @media (max-width: 999px) {
-      font-size: 2rem;
+      font-size: 2.1rem;
     }
   }
   & p {
@@ -62,13 +65,13 @@ export default {
     // transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     // overflow: hidden;
-    transition-duration: 0.35s;
+    transition-duration: 0.25s;
     transition-property: background-color, box-shadow transform;
   }
   &__animated:hover, &__animated:focus, &__animated:active {
     background-color: $mintgreen;
     // color: $white;
-    transform: scale(1.005);
+    // transform: scale(1.005);
     box-shadow: 0 2px 10px rgba($black, 0.7);
   }
 }

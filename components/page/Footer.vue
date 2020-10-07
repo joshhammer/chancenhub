@@ -1,31 +1,34 @@
 <template>
   <footer class="footer">
     <div class="footer__wrapper">
-      <h1>FOOTER</h1>
       <Social />
+      <div class="jvm-text">
+        <Contacts />
+        <About />
+      </div>
     </div>
   </footer>
 </template>
 
 <script>
 import Social from '../partials/Social'
+import Contacts from '../partials/Contacts'
+import About from '../partials/About'
 export default {
   name: 'Footer',
-  components: { Social }
+  components: { Social, Contacts, About }
 }
 </script>
 
 <style lang="scss" scoped>
 .footer {
-  border: 1px solid red;
-  // position: relative;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: $white;
   &__wrapper {
-    border: 3px solid lime;
+    display: flex;
   }
+}
+
+.jvm-text {
+  display: flex;
 }
 </style>
