@@ -166,6 +166,90 @@ const data = [
     type: 'rule',
     creationDate: new Date(2020, 9, 14).toLocaleString(),
     id: 14
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'New Horizons für Gaming.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 15).toLocaleString(),
+    id: 15
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Pawfect Playlists.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 17).toLocaleString(),
+    id: 17
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Gratis gewinnt.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 18).toLocaleString(),
+    id: 18
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Live ist das neue Life.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 19).toLocaleString(),
+    id: 19
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Solidarität schlägt Profit.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 20).toLocaleString(),
+    id: 20
+  },
+  {
+    author: undefined,
+    link: {
+      uri: '/fit-for-recovery'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Jetzt schlau werden.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 21).toLocaleString(),
+    id: 21
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Die bargeldlose Gewohnheit.',
+    type: 'rule',
+    creationDate: new Date(2020, 9, 22).toLocaleString(),
+    id: 22
   }
 ]
 

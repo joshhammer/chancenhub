@@ -16,7 +16,10 @@ export default {
 <style lang="scss" scoped>
 .contacts {
   margin: 0 1rem 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
   & span {
+    font-weight: 300;
     position: relative;
     &:not(:first-child)::before {
       content: " / ";

@@ -51,7 +51,7 @@ export default {
 .social {
   list-style-type: none;
   display: flex;
-  border: 3px solid red;
+  align-items: center;
   margin-right: 2rem;
   & li:not(:last-child) {
     margin-right: 1rem;
@@ -62,8 +62,8 @@ export default {
       align-items: center;
       border: 1px solid rgba($black, 0.3);
       border-radius: 50%;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       & svg {
       transition: fill .3s;
         // width: 30px;

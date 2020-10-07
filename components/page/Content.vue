@@ -41,6 +41,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding-top: 200px;
+  padding-bottom: 150px;
   &__grid {
     width: 100%;
     padding: 3rem;

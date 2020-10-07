@@ -1,10 +1,12 @@
 <template>
-  <div class="card card__animated">
-    <div class="card__inner">
-      <p>{{ type === 'rule' ? '#Spielregeln' : null }}</p>
-      <h1>{{ title }}</h1>
-    </div>
+  <a href="https://chancen.jvm.ch/die-bargeldlose-gewohnheit" class="card card__animated">
+    <div>
+      <div class="card__inner">
+        <p>{{ type === 'rule' ? '#Spielregeln' : null }}</p>
+        <h1>{{ title }}</h1>
+      </div>
   </div>
+  </a>
 </template>
 
 <script>
@@ -28,8 +30,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  display: block;
+}
+
 .card {
-  border-radius: 5px;
+  // border-radius: 5px;
   padding: 20px;
   background: $gray;
   min-width: 200px;
@@ -61,18 +67,13 @@ export default {
   }
   &__animated {
     display: inline-block;
-    // vertical-align: middle;
-    // transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    // overflow: hidden;
-    transition-duration: 0.25s;
+    // box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
     transition-property: background-color, box-shadow transform;
   }
   &__animated:hover, &__animated:focus, &__animated:active {
     background-color: $mintgreen;
-    // color: $white;
-    // transform: scale(1.005);
-    box-shadow: 0 2px 10px rgba($black, 0.7);
+    box-shadow: 0 4px 15px rgba($black, 0.5);
   }
 }
 </style>
