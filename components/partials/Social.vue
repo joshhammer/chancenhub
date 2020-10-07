@@ -53,6 +53,9 @@ export default {
   display: flex;
   align-items: center;
   margin-right: 2rem;
+  @media (max-width: 1024px) {
+    margin: 0 0 1.5rem 0;
+  }
   & li:not(:last-child) {
     margin-right: 1rem;
   }
@@ -64,6 +67,10 @@ export default {
       border-radius: 50%;
       width: 40px;
       height: 40px;
+      @media (max-width: 1024px) {
+        height: 30px;
+        width: 30px;
+      }
       & svg {
       transition: fill .3s;
         // width: 30px;

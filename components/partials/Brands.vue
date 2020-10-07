@@ -26,6 +26,9 @@ export default {
     & a {
       text-transform: uppercase;
       font-weight: 300;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
   }
 }

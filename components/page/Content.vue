@@ -42,6 +42,9 @@ export default {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 150px;
+  @media (max-width: 1024px) {
+    padding-bottom: 0;
+  }
   &__grid {
     width: 100%;
     padding: 3rem;
@@ -58,7 +61,7 @@ export default {
     @media (max-width: 1199px) {
       grid-template-columns: repeat(2, auto);
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
   }

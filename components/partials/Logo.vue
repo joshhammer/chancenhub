@@ -28,7 +28,7 @@ export default {
 .logo {
   text-decoration: none;
   color: $black;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
         margin-bottom: 1rem;
       }
   &__wrapper {
@@ -37,7 +37,7 @@ export default {
 
   &__image {
     display: inline-block;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         display: none;
       }
     svg {
@@ -45,9 +45,13 @@ export default {
       width: 72px;
       color: $black;
 
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         height: 60px;
-        width: 32px
+        width: 36px
+      }
+      @media (max-width: 768px) {
+        height: 60px;
+        width: 36px
       }
     }
   }
@@ -60,14 +64,20 @@ export default {
     justify-content: center;
     margin-left: 1rem;
     max-width: 300px;
+    @media (max-width: 768px) {
+        margin-left: 0;
+      }
   }
   &__hashtag {
     h1 {
       text-transform: uppercase;
       font-size: 2.5rem;
 
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         font-size: 2rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
         text-align: center;
       }
     }
@@ -75,8 +85,9 @@ export default {
   &__claim {
     p {
       font-size: 12px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         text-align: center;
+        display: none;
       }
     }
   }

@@ -18,6 +18,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    display: none;
+  }
   & p {
     text-transform: uppercase;
     font-weight: 300;

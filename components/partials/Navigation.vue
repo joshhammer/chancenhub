@@ -30,7 +30,15 @@ export default {
 
 <style lang="scss" scoped>
 .navigation {
-  @media (max-width: 767px) {
+  @media (max-width: 1299px) {
+        order: 3;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
+  @media (max-width: 1024px) {
+        margin-top: 0;
+      }
+  @media (max-width: 768px) {
         order: 2;
       }
   &__list {
@@ -39,7 +47,7 @@ export default {
   }
   &__item:not(:last-child) {
     margin-right: 2rem;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         margin-right: 1rem;
       }
   }
@@ -54,7 +62,12 @@ export default {
     background-position: bottom;
     background-repeat: repeat-x;
     transition: all .15s ease-in-out;
-    @media (max-width: 767px) {
+
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+
+      }
+    @media (max-width: 768px) {
         font-size: 1.1rem;
         padding: 0;
       }

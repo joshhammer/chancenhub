@@ -18,6 +18,9 @@ export default {
   margin: 0 1rem 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    margin: 0 0 1rem 0;
+  }
   & span {
     font-weight: 300;
     position: relative;

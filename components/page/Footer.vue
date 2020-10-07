@@ -35,8 +35,19 @@ export default {
   width: 100%;
   bottom: 0;
   left: 0;
+  @media (max-width: 1024px) {
+    padding: 1rem 3rem 2rem 3rem;
+  }
+  @media (max-width: 768px) {
+    position: relative;
+    width: auto;
+  }
   &__wrapper {
     display: flex;
+    @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
   }
 }
 
@@ -46,6 +57,10 @@ export default {
   &__top {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
   }
 }
 

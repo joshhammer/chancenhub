@@ -21,21 +21,27 @@ export default {
 
 <style lang="scss" scoped>
 .call {
-  @media (max-width: 767px) {
+  @media (max-width: 1299px) {
+      margin-left: 5rem;
+    }
+  @media (max-width: 768px) {
         order: 1;
-        margin-bottom: 1rem;
+        margin: 0 0 1rem 0;
       }
   &__button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $dark-green;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
     margin-bottom: .5rem;
     border-radius: 25px;
     max-width: 200px;
     transition: background-color 0.2s, box-shadow 0.2s;
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
+        padding: .5rem -.75rem;
+      }
+    @media (max-width: 768px) {
         padding: .5rem .75rem;
       }
     &:hover {
@@ -45,7 +51,10 @@ export default {
     &__text {
       font-weight: 700;
       font-size: 1.2rem;
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+      @media (max-width: 768px) {
         font-size: .9rem;
       }
     }
@@ -63,6 +72,10 @@ export default {
       width: 20px;
       color: white;
       margin-right: .5rem;
+      @media (max-width: 1024px) {
+        height: 15px;
+        width: 15px;
+      }
     }
   }
   &__help {
@@ -71,6 +84,11 @@ export default {
     align-items: center;
     p, a {
       font-size: 12px;
+    }
+    p {
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     a {
       color: $dark-green;

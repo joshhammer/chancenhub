@@ -37,8 +37,10 @@ export default {
     background-color: $white;
     border-bottom: 1px solid rgba($black, 0.1);
     box-shadow: 0 2px 10px rgba($black, 0.15);
-
-    @media (max-width: 767px) {
+    @media (max-width: 1399px) {
+          flex-wrap: wrap;
+        }
+    @media (max-width: 768px) {
       flex-direction: column;
       padding: 1rem 1.5rem;
     }
