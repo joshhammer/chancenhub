@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Header />
-    <Content />
+    <Header @send-filter-value="setFilterValue" />
+    <Content
+      :filter-value="filterValue"
+    />
     <Footer />
   </div>
 </template>
@@ -12,7 +14,17 @@ import Content from './page/Content'
 import Footer from './page/Footer'
 export default {
   name: 'App',
-  components: { Header, Content, Footer }
+  components: { Header, Content, Footer },
+  data () {
+    return {
+      filterValue: 'rule'
+    }
+  },
+  methods: {
+    setFilterValue (newVal) {
+      this.filterValue = newVal
+    }
+  }
 }
 </script>
 

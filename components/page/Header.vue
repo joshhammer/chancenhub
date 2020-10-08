@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <Logo />
-    <Navigation />
+    <Navigation @send-filter-value="setFilterValue" />
     <Call>
       <template>
         <Phone />
@@ -19,12 +19,28 @@ import Phone from '~/assets/images/icon-call.svg?inline'
 
 export default {
   name: 'Header',
-  components: { Logo, Navigation, Call, Phone }
+  components: { Logo, Navigation, Call, Phone },
+  data () {
+    return {
+      filterValue: 'rule'
+    }
+  },
+  watch: {
+    filterValue (newVal, oldVal) {
+      this.$emit('send-filter-value', newVal)
+    }
+  },
+  methods: {
+    setFilterValue (value) {
+      this.filterValue = value
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
   .header {
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;

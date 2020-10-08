@@ -4,6 +4,7 @@
       <Card
         v-for="card in sortedCards"
         :key="card.id"
+        :card-id="card.id"
         :title="card.title"
         :creation-date="card.creationDate"
         :type="card.type"
@@ -19,6 +20,12 @@ import Card from '../partials/Card'
 export default {
   name: 'Content',
   components: { Card },
+  props: {
+    filterValue: {
+      type: String,
+      default: 'rule'
+    }
+  },
   data () {
     return {
       cards: data
@@ -29,7 +36,8 @@ export default {
       const cards = data.sort((a, b) => {
         return a.id > b.id ? -1 : 1
       })
-      return cards
+      const filteredCards = cards.filter(card => card.type === this.filterValue)
+      return filteredCards
     }
   }
 }

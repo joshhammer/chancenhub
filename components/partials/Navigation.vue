@@ -2,13 +2,31 @@
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__item">
-        <a href="" class="navigation__link" :class="{active:active === 'rule'}" @click.prevent="active = 'rule'">#Spielregeln</a>
+        <a
+          href=""
+          class="navigation__link"
+          :class="{active:filterValue === 'rule'}"
+          @click.prevent="filterValue = 'rule'"
+          @click="sendFilterValue"
+        >#Spielregeln</a>
       </li>
       <li class="navigation__item">
-        <a href="" class="navigation__link" :class="{active:active === 'article'}" @click.prevent="active = 'article'">#Artikel</a>
+        <a
+          href=""
+          class="navigation__link"
+          :class="{active:filterValue === 'article'}"
+          @click.prevent="filterValue = 'article'"
+          @click="sendFilterValue"
+        >#Artikel</a>
       </li>
       <li class="navigation__item">
-        <a href="" class="navigation__link" :class="{active:active === 'link'}" @click.prevent="active = 'link'">#Bestpractice</a>
+        <a
+          href=""
+          class="navigation__link"
+          :class="{active:filterValue === 'link'}"
+          @click.prevent="filterValue = 'link'"
+          @click="sendFilterValue"
+        >#Bestpractice</a>
       </li>
     </ul>
   </nav>
@@ -19,11 +37,13 @@ export default {
   name: 'Navigation',
   data () {
     return {
-      active: 'rule'
+      filterValue: 'rule'
     }
   },
   methods: {
-
+    sendFilterValue () {
+      this.$emit('send-filter-value', this.filterValue)
+    }
   }
 }
 </script>
@@ -35,11 +55,9 @@ export default {
         margin: 0 auto;
         margin-top: 2rem;
       }
-  @media (max-width: 1024px) {
-        margin-top: 0;
-      }
   @media (max-width: 768px) {
         order: 2;
+        margin-top: 0;
       }
   &__list {
     display: flex;

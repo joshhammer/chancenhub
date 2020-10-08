@@ -1,11 +1,12 @@
 <template>
   <a href="https://chancen.jvm.ch/die-bargeldlose-gewohnheit" class="card card__animated">
-    <div>
-      <div class="card__inner">
-        <p>{{ type === 'rule' ? '#Spielregeln' : null }}</p>
-        <h1>{{ title }}</h1>
-      </div>
-  </div>
+    <div class="card__inner">
+      <p>{{ type === 'rule' ? '#Spielregeln' : null }}</p>
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="card__overlay">
+      <h2 v-if="type === 'rule'">#{{ cardId }}</h2>
+    </div>
   </a>
 </template>
 
@@ -24,6 +25,10 @@ export default {
     type: {
       type: String,
       default: null
+    },
+    cardId: {
+      type: Number,
+      default: null
     }
   }
 }
@@ -35,15 +40,40 @@ a {
 }
 
 .card {
-  // border-radius: 5px;
+  position: relative;
   padding: 20px;
   background: $gray;
   min-width: 200px;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    & h2 {
+      font-size: 10rem;
+      color: $white;
+    }
+  }
   &__inner {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-color: rgba($black, 0.2);
+    // }
   }
   & h1 {
     color: $white;

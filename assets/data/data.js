@@ -250,6 +250,30 @@ const data = [
     type: 'rule',
     creationDate: new Date(2020, 9, 22).toLocaleString(),
     id: 22
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Jetzt kommt es zur Mutation',
+    type: 'article',
+    creationDate: new Date(2020, 9, 23).toLocaleString(),
+    id: 23
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#EA594B',
+    text: '',
+    title: 'Ovomaltine unterstützt beim Weg aus dem Lockdown und macht die Schweizerinnen und Schweizer fit für den Alltag draussen.',
+    type: 'link',
+    creationDate: new Date(2020, 9, 24).toLocaleString(),
+    id: 24
   }
 ]
 
