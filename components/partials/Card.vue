@@ -39,7 +39,9 @@ export default {
     titleSize () {
       return this.title.length > 50
         ? { fontSize: '1.5rem' } : this.title.length > 30
-          ? { fontSize: '2rem' } : null
+          ? { fontSize: '1.75rem' } : this.title > 20
+            ? { fontSize: '2rem' } : this.title > 10
+              ? { fontSize: '2.25rem' } : null
     }
   }
 }
@@ -53,9 +55,9 @@ a {
 .card {
   position: relative;
   padding: 20px;
-  // background: $gray;
   min-width: 200px;
   border: 1px solid rgba($black, 0.05);
+  overflow: hidden;
   &__overlay {
     position: absolute;
     top: 0;
@@ -77,15 +79,6 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   height: 100%;
-    //   width: 100%;
-    //   background-color: rgba($black, 0.2);
-    // }
   }
   & h1 {
     color: $white;
@@ -109,13 +102,13 @@ a {
   }
   &__animated {
     display: inline-block;
-    // box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-property: background-color, box-shadow transform;
   }
   &__animated:hover, &__animated:focus, &__animated:active {
     background-color: $mintgreen;
-    box-shadow: 0 4px 15px rgba($black, 0.5);
+    box-shadow: 0 4px 15px rgba($black, 0.6);
+    transform: scale(1.025);
   }
 }
 </style>

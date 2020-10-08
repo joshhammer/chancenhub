@@ -90,7 +90,7 @@ const data = [
     },
     backgroundColor: '#8D6BF7',
     text: '',
-    title: 'Brandertainment 2.0',
+    title: 'Brander-tainment 2.0',
     type: 'rule',
     creationDate: new Date(2020, 9, 8).toLocaleString(),
     id: 8
@@ -148,7 +148,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#8D6BF7',
+    backgroundColor: '#EA594B',
     text: '',
     title: 'OOH is dead. For now.',
     type: 'rule',
@@ -160,7 +160,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#8D6BF7',
     text: '',
     title: 'Gemeinsam einsam.',
     type: 'rule',
