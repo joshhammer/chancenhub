@@ -8,6 +8,7 @@
         :title="card.title"
         :creation-date="card.creationDate"
         :type="card.type"
+        :background-color="card.backgroundColor"
       />
     </div>
   </div>

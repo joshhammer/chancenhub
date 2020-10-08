@@ -1,8 +1,8 @@
 <template>
-  <a href="https://chancen.jvm.ch/die-bargeldlose-gewohnheit" class="card card__animated">
+  <a href="https://chancen.jvm.ch/die-bargeldlose-gewohnheit" class="card card__animated" :style="{ backgroundColor: backgroundColor }">
     <div class="card__inner">
-      <p>{{ type === 'rule' ? '#Spielregeln' : null }}</p>
-      <h1>{{ title }}</h1>
+      <p>{{ type === 'rule' ? '#Spielregeln' : type === 'article' ? '#Artikel' : '#Bestpractice' }}</p>
+      <h1 :style="titleSize">{{ title }}</h1>
     </div>
     <div class="card__overlay">
       <h2 v-if="type === 'rule'">#{{ cardId }}</h2>
@@ -29,6 +29,17 @@ export default {
     cardId: {
       type: Number,
       default: null
+    },
+    backgroundColor: {
+      type: String,
+      default: null
+    }
+  },
+  computed: {
+    titleSize () {
+      return this.title.length > 50
+        ? { fontSize: '1.5rem' } : this.title.length > 30
+          ? { fontSize: '2rem' } : null
     }
   }
 }
@@ -42,8 +53,9 @@ a {
 .card {
   position: relative;
   padding: 20px;
-  background: $gray;
+  // background: $gray;
   min-width: 200px;
+  border: 1px solid rgba($black, 0.05);
   &__overlay {
     position: absolute;
     top: 0;

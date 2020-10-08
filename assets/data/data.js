@@ -16,7 +16,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#8D6BF7',
     text: '',
     title: 'Was Corona und Lippenstifte gemeinsam haben.',
     type: 'rule',
@@ -28,7 +28,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#78D8A9',
     text: '',
     title: 'Der dargebotene Videocall.',
     type: 'rule',
@@ -40,7 +40,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: ' #0D2705',
     text: '',
     title: 'Know your target.',
     type: 'rule',
@@ -64,7 +64,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: ' #0D2705',
     text: '',
     title: 'Zeit für AR.',
     type: 'rule',
@@ -88,7 +88,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#8D6BF7',
     text: '',
     title: 'Brandertainment 2.0',
     type: 'rule',
@@ -100,7 +100,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#3f91f7',
     text: '',
     title: 'Improvisation in Isolation',
     type: 'rule',
@@ -124,7 +124,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#78D8A9',
     text: '',
     title: 'Buy now, enjoy later.',
     type: 'rule',
@@ -136,7 +136,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#78D8A9',
     text: '',
     title: 'Von VR zu NR.',
     type: 'rule',
@@ -148,7 +148,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#8D6BF7',
     text: '',
     title: 'OOH is dead. For now.',
     type: 'rule',
@@ -172,7 +172,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#E94BB0',
     text: '',
     title: 'New Horizons für Gaming.',
     type: 'rule',
@@ -208,7 +208,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#E94BB0',
     text: '',
     title: 'Live ist das neue Life.',
     type: 'rule',
@@ -232,7 +232,7 @@ const data = [
     link: {
       uri: '/fit-for-recovery'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#78D8A9',
     text: '',
     title: 'Jetzt schlau werden.',
     type: 'rule',
@@ -244,7 +244,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: ' #0D2705',
     text: '',
     title: 'Die bargeldlose Gewohnheit.',
     type: 'rule',
@@ -256,7 +256,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#3f91f7',
     text: '',
     title: 'Jetzt kommt es zur Mutation',
     type: 'article',
@@ -268,12 +268,132 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#EA594B',
+    backgroundColor: '#b5bcb5',
     text: '',
     title: 'Ovomaltine unterstützt beim Weg aus dem Lockdown und macht die Schweizerinnen und Schweizer fit für den Alltag draussen.',
     type: 'link',
     creationDate: new Date(2020, 9, 24).toLocaleString(),
     id: 24
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#3f91f7',
+    text: '',
+    title: 'There is Art in Artificial',
+    type: 'article',
+    creationDate: new Date(2020, 9, 25).toLocaleString(),
+    id: 25
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#3f91f7',
+    text: '',
+    title: 'Media-Chance in Zeiten von Corona',
+    type: 'article',
+    creationDate: new Date(2020, 9, 26).toLocaleString(),
+    id: 26
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#3f91f7',
+    text: '',
+    title: 'Von Krisen und Chancen: Wie sich Marken jetzt verhalten sollten',
+    type: 'article',
+    creationDate: new Date(2020, 9, 27).toLocaleString(),
+    id: 27
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#3f91f7',
+    text: '',
+    title: 'NO1: Firstworld Fastenzeit.',
+    type: 'article',
+    creationDate: new Date(2020, 9, 28).toLocaleString(),
+    id: 28
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#3f91f7',
+    text: '',
+    title: '#1 Why Performance matters?',
+    type: 'article',
+    creationDate: new Date(2020, 9, 29).toLocaleString(),
+    id: 29
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#b5bcb5',
+    text: '',
+    title: 'Nike: We are never too far down to come back.',
+    type: 'link',
+    creationDate: new Date(2020, 9, 30).toLocaleString(),
+    id: 30
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#b5bcb5',
+    text: '',
+    title: 'Mit natürlichen Repellents gegen das Coronavirus.',
+    type: 'link',
+    creationDate: new Date(2020, 9, 31).toLocaleString(),
+    id: 31
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#b5bcb5',
+    text: '',
+    title: 'Ersatz für die physische Speisekarte in Covid-19 Zeiten',
+    type: 'link',
+    creationDate: new Date(2020, 10, 1).toLocaleString(),
+    id: 32
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#b5bcb5',
+    text: '',
+    title: 'Google Schweiz mit Massnahmen-Checkliste für den stationären Handel',
+    type: 'link',
+    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    id: 33
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
+    },
+    backgroundColor: '#b5bcb5',
+    text: '',
+    title: '"Jetzt geht es um Nähe und Authentizität"',
+    type: 'link',
+    creationDate: new Date(2020, 9, 3).toLocaleString(),
+    id: 34
   }
 ]
 

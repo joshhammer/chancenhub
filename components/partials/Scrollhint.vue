@@ -26,6 +26,7 @@ export default {
     font-weight: 300;
     font-size: 18px;
     margin-left: .5rem;
+    animation: blinkText 1s ease-in-out infinite alternate;
   }
   &__arrow {
     animation: blink 1s ease-in-out infinite alternate;
@@ -66,12 +67,13 @@ export default {
     height: 1px;
     background-color: $black;
   }
-  &__animated {
-    animation: blink 1s ease-in-out infinite alternate;
-  }
   @keyframes blink {
     from {background-color: rgba($black, 1)}
     to {background-color: rgba($black, 0)}
+  }
+  @keyframes blinkText {
+    from {color: rgba($black, 1)}
+    to {color: rgba($black, 0)}
   }
 }
 
