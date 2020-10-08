@@ -1,4 +1,4 @@
-# testnuxt
+# chancenhub
 
 ## Build Setup
 
