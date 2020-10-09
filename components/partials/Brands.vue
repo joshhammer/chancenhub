@@ -1,11 +1,11 @@
 <template>
   <div>
     <ul class="jvm-brands">
-      <li><a href="">Brand Identity</a></li>
-      <li><a href="">Impact</a></li>
-      <li><a href="">Play</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Tech</a></li>
+      <li><a href="http://jvmbrandidentity.ch/">Brand Identity</a></li>
+      <li><a href="http://jvmimpact.ch/">Impact</a></li>
+      <li><a href="http://www.jvm-play.ch/">Play</a></li>
+      <li><a href="https://jvmservices.ch/">Services</a></li>
+      <li><a href="https://jvmtech.ch/">Tech</a></li>
     </ul>
   </div>
 </template>

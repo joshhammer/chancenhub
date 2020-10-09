@@ -2,7 +2,7 @@
   <div class="content">
     <div class="content__grid">
       <Card
-        v-for="card in sortedCards"
+        v-for="card in sortedAndFilteredCards"
         :key="card.id"
         :card-id="card.id"
         :title="card.title"
@@ -24,7 +24,7 @@ export default {
   props: {
     filterValue: {
       type: String,
-      default: 'rule'
+      default: 'all'
     }
   },
   data () {
@@ -33,10 +33,14 @@ export default {
     }
   },
   computed: {
-    sortedCards () {
+    sortedAndFilteredCards () {
       const cards = data.sort((a, b) => {
         return a.id > b.id ? -1 : 1
       })
+      if (this.filterValue === 'all') {
+        const allCards = this.cards
+        return allCards
+      }
       const filteredCards = cards.filter(card => card.type === this.filterValue)
       return filteredCards
     }
@@ -51,14 +55,22 @@ export default {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 150px;
+  @media (max-width: 1299px) {
+    padding-top: 254px;
+  }
   @media (max-width: 1024px) {
+    padding-top: 212px;
+    padding-bottom: 175px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 174px;
     padding-bottom: 0;
   }
   &__grid {
     width: 100%;
     padding: 3rem;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 25px;
     grid-template-columns: repeat(5, auto);
     grid-auto-rows: 300px;
     @media (max-width: 1799px) {
@@ -71,6 +83,7 @@ export default {
       grid-template-columns: repeat(2, auto);
     }
     @media (max-width: 768px) {
+      padding-top: 2rem;
       grid-template-columns: 1fr;
     }
   }

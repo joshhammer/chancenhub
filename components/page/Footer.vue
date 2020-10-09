@@ -36,7 +36,7 @@ export default {
   bottom: 0;
   left: 0;
   @media (max-width: 1024px) {
-    padding: 1rem 3rem 2rem 3rem;
+    padding: 2rem 3rem 2rem 3rem;
   }
   @media (max-width: 768px) {
     position: relative;

@@ -43,7 +43,7 @@ export default {
     svg {
       height: 120px;
       width: 72px;
-      color: $black;
+      color: $dark-green;
 
       @media (max-width: 1024px) {
         height: 60px;
@@ -72,6 +72,7 @@ export default {
     h1 {
       text-transform: uppercase;
       font-size: 2.5rem;
+      color: $dark-green;
 
       @media (max-width: 1024px) {
         font-size: 2rem;

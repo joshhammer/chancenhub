@@ -17,7 +17,7 @@ export default {
   components: { Header, Content, Footer },
   data () {
     return {
-      filterValue: 'rule'
+      filterValue: 'all'
     }
   },
   methods: {

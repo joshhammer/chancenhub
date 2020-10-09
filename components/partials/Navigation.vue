@@ -4,7 +4,7 @@
       <li class="navigation__item">
         <a
           href=""
-          class="navigation__link"
+          class="navigation__link navigation__link__rule"
           :class="{active:filterValue === 'rule'}"
           @click.prevent="filterValue = 'rule'"
           @click="sendFilterValue"
@@ -13,7 +13,7 @@
       <li class="navigation__item">
         <a
           href=""
-          class="navigation__link"
+          class="navigation__link navigation__link__article"
           :class="{active:filterValue === 'article'}"
           @click.prevent="filterValue = 'article'"
           @click="sendFilterValue"
@@ -22,7 +22,7 @@
       <li class="navigation__item">
         <a
           href=""
-          class="navigation__link"
+          class="navigation__link navigation__link__link"
           :class="{active:filterValue === 'link'}"
           @click.prevent="filterValue = 'link'"
           @click="sendFilterValue"
@@ -37,7 +37,7 @@ export default {
   name: 'Navigation',
   data () {
     return {
-      filterValue: 'rule'
+      filterValue: 'all'
     }
   },
   methods: {
@@ -70,13 +70,13 @@ export default {
       }
   }
   &__link {
-    color: $black;
+    color: $dark-green;
     text-transform: uppercase;
     font-size: 1.75rem;
     font-weight: 300;
     padding: 0 5px;
     background-image: linear-gradient(to right, $mintgreen, $mintgreen);
-    background-size: 100% 30%;
+    background-size: 100% 5%;
     background-position: bottom;
     background-repeat: repeat-x;
     transition: all .15s ease-in-out;
@@ -92,6 +92,15 @@ export default {
     &:hover {
       background-size: 100% 100%;
       color: $white;
+    }
+    &__rule {
+      background-image: linear-gradient(to right, $red, $red);
+    }
+    &__article {
+      background-image: linear-gradient(to right, $blue, $blue);
+    }
+    &__link {
+      background-image: linear-gradient(to right, $gray, $gray);
     }
   }
 }

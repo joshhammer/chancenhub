@@ -268,7 +268,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: 'Ovomaltine unterstützt beim Weg aus dem Lockdown und macht die Schweizerinnen und Schweizer fit für den Alltag draussen.',
     type: 'link',
@@ -340,7 +340,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: 'Nike: We are never too far down to come back.',
     type: 'link',
@@ -352,7 +352,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: 'Mit natürlichen Repellents gegen das Coronavirus.',
     type: 'link',
@@ -364,7 +364,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: 'Ersatz für die physische Speisekarte in Covid-19 Zeiten',
     type: 'link',
@@ -376,7 +376,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: 'Google Schweiz mit Massnahmen-Checkliste für den stationären Handel',
     type: 'link',
@@ -388,7 +388,7 @@ const data = [
     link: {
       uri: 'https://chancen.jvm.ch/die-bargeldlose-gewohnheit'
     },
-    backgroundColor: '#b5bcb5',
+    backgroundColor: '#8c928c',
     text: '',
     title: '"Jetzt geht es um Nähe und Authentizität"',
     type: 'link',

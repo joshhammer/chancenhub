@@ -68,17 +68,21 @@ export default {
       width: 40px;
       height: 40px;
       @media (max-width: 1024px) {
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
       }
-      & svg {
-      transition: fill .3s;
-        // width: 30px;
-        // height: 30px;
+       svg {
+        transition: fill .2s;
+        width: 22px;
+        height: 22px;
+        @media (max-width: 1024px) {
+          height: 18px;
+          width: 18px;
+      }
       }
       &:hover {
         & svg {
-          fill: lime;
+          fill: $blue;
         }
       }
     }

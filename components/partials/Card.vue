@@ -37,11 +37,12 @@ export default {
   },
   computed: {
     titleSize () {
-      return this.title.length > 50
-        ? { fontSize: '1.5rem' } : this.title.length > 30
-          ? { fontSize: '1.75rem' } : this.title > 20
-            ? { fontSize: '2rem' } : this.title > 10
-              ? { fontSize: '2.25rem' } : null
+      return this.title.length > 60
+        ? { fontSize: '1.25rem' } : this.title.length > 50
+          ? { fontSize: '1.5rem' } : this.title.length > 30
+            ? { fontSize: '1.75rem' } : this.title > 20
+              ? { fontSize: '2rem' } : this.title > 10
+                ? { fontSize: '2.25rem' } : null
     }
   }
 }
@@ -92,6 +93,9 @@ a {
     }
     @media (max-width: 999px) {
       font-size: 2.1rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 2rem;
     }
   }
   & p {
