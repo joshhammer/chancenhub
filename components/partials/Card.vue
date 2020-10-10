@@ -1,5 +1,5 @@
 <template>
-  <a href="https://chancen.jvm.ch/die-bargeldlose-gewohnheit" class="card card__animated" :style="{ backgroundColor: backgroundColor }">
+  <a :href="link.uri" class="card card__animated" :style="{ backgroundColor: backgroundColor }">
     <div class="card__inner">
       <p>{{ type === 'rule' ? '#Spielregeln' : type === 'article' ? '#Artikel' : '#Bestpractice' }}</p>
       <h1 :style="titleSize">{{ title }}</h1>
@@ -19,7 +19,7 @@ export default {
       default: null
     },
     creationDate: {
-      type: String,
+      type: Number,
       default: null
     },
     type: {
@@ -32,6 +32,10 @@ export default {
     },
     number: {
       type: Number,
+      default: null
+    },
+    link: {
+      type: Object,
       default: null
     },
     backgroundColor: {

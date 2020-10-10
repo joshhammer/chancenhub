@@ -7,6 +7,7 @@
         :card-id="card.id"
         :number="card.number"
         :title="card.title"
+        :link="card.link"
         :creation-date="card.creationDate"
         :type="card.type"
         :background-color="card.backgroundColor"
@@ -24,7 +25,8 @@ export default {
   components: { Card },
   props: {
     filterValue: {
-      type: String
+      type: String,
+      default: ''
     }
   },
   data () {
@@ -33,15 +35,29 @@ export default {
     }
   },
   computed: {
+    cardsWithDate () {
+      const cardsWithJoinedDate = this.cards.map((card) => {
+        const tempArray = String(card.creationDate).split('/').reverse()
+        // console.log('TEMPARRAY01', tempArray[1].length)
+        // if (tempArray[1].length === 1) {
+        //   tempArray[1] = '0' + tempArray[1]
+        // }
+        const joinedDate = tempArray.join('')
+        card.creationDate = Number(joinedDate)
+        return card
+      })
+      return cardsWithJoinedDate
+    },
     sortedAndFilteredCards () {
-      const cards = data.sort((a, b) => {
-        return a.id > b.id ? -1 : 1
+      const cardsCopy = this.cardsWithDate
+      const sortedCards = cardsCopy.sort((a, b) => {
+        console.log(a.creationDate)
+        return a.creationDate > b.creationDate ? -1 : 1
       })
       if (this.filterValue === 'all') {
-        const allCards = this.cards
-        return allCards
+        return sortedCards
       }
-      const filteredCards = cards.filter(card => card.type === this.filterValue)
+      const filteredCards = sortedCards.filter(card => card.type === this.filterValue)
       return filteredCards
     }
   }
