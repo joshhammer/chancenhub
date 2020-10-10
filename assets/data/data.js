@@ -179,9 +179,22 @@ const data = [
     text: '',
     title: 'Gemeinsam einsam.',
     type: 'rule',
-    creationDate: new Date(2020, 7, 28).toLocaleDateString(),
+    creationDate: new Date(2020, 7, 22).toLocaleDateString(),
     id: 14,
     number: 14
+  },
+  {
+    author: undefined,
+    link: {
+      uri: 'https://chancen.jvm.ch/die-neue-ernsthaftigkeit'
+    },
+    backgroundColor: '#0D2705',
+    text: '',
+    title: 'New Horizons für Gaming.',
+    type: 'rule',
+    creationDate: new Date(2020, 7, 25).toLocaleDateString(),
+    id: 15,
+    number: 15
   },
   {
     author: undefined,
@@ -193,8 +206,8 @@ const data = [
     title: 'New Horizons für Gaming.',
     type: 'rule',
     creationDate: new Date(2020, 7, 31).toLocaleDateString(),
-    id: 15,
-    number: 15
+    id: 16,
+    number: 16
   },
   {
     author: undefined,

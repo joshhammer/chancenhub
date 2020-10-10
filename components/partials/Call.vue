@@ -42,7 +42,9 @@ export default {
         padding: .5rem -.75rem;
       }
     @media (max-width: 768px) {
-        padding: .5rem .75rem;
+        // padding: .5rem .75rem;
+        padding: 0;
+        background-color: transparent;
       }
     &:hover {
       background-color: $mintgreen;
@@ -66,6 +68,9 @@ export default {
       display: inline-block;
       color: $white;
       text-transform: uppercase;
+      @media (max-width: 768px) {
+        color: $black;
+      }
     }
     svg {
       height: 20px;
@@ -75,6 +80,9 @@ export default {
       @media (max-width: 1024px) {
         height: 15px;
         width: 15px;
+      }
+      @media (max-width: 768px) {
+        color: $black;
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/" class="logo">
+  <a href="/" class="logo">
     <div class="logo__wrapper">
       <div class="logo__image">
         <Logo />
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-  </nuxt-link>
+  </a>
 </template>
 
 <script>

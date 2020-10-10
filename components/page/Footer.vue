@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   padding: 3rem;
-  background-color: $white;
+  background-color: rgba($white, 0.95);
   position: fixed;
   width: 100%;
   bottom: 0;

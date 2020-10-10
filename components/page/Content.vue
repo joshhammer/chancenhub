@@ -5,7 +5,7 @@
         v-for="card in sortedAndFilteredCards"
         :key="card.id"
         :card-id="card.id"
-        :number="card.number"
+        :rule-number="card.number"
         :title="card.title"
         :link="card.link"
         :creation-date="card.creationDate"
@@ -38,10 +38,6 @@ export default {
     cardsWithDate () {
       const cardsWithJoinedDate = this.cards.map((card) => {
         const tempArray = String(card.creationDate).split('/').reverse()
-        // console.log('TEMPARRAY01', tempArray[1].length)
-        // if (tempArray[1].length === 1) {
-        //   tempArray[1] = '0' + tempArray[1]
-        // }
         const joinedDate = tempArray.join('')
         card.creationDate = Number(joinedDate)
         return card
@@ -51,7 +47,6 @@ export default {
     sortedAndFilteredCards () {
       const cardsCopy = this.cardsWithDate
       const sortedCards = cardsCopy.sort((a, b) => {
-        console.log(a.creationDate)
         return a.creationDate > b.creationDate ? -1 : 1
       })
       if (this.filterValue === 'all') {
