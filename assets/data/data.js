@@ -8,8 +8,9 @@ const data = [
     text: '',
     title: 'Fit for Recovery',
     type: 'rule',
-    creationDate: new Date(2020, 9, 1).toLocaleString(),
-    id: 1
+    creationDate: new Date(2020, 9, 1).toLocaleDateString(),
+    id: 1,
+    number: 1
   },
   {
     author: undefined,
@@ -20,8 +21,9 @@ const data = [
     text: '',
     title: 'Was Corona und Lippenstifte gemeinsam haben.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 2).toLocaleString(),
-    id: 2
+    creationDate: new Date(2020, 9, 2).toLocaleDateString(),
+    id: 2,
+    number: 2
   },
   {
     author: undefined,
@@ -32,8 +34,9 @@ const data = [
     text: '',
     title: 'Der dargebotene Videocall.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 3).toLocaleString(),
-    id: 3
+    creationDate: new Date(2020, 9, 3).toLocaleDateString(),
+    id: 3,
+    number: 3
   },
   {
     author: undefined,
@@ -44,8 +47,9 @@ const data = [
     text: '',
     title: 'Know your target.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 4).toLocaleString(),
-    id: 4
+    creationDate: new Date(2020, 9, 4).toLocaleDateString(),
+    id: 4,
+    number: 4
   },
   {
     author: undefined,
@@ -56,8 +60,9 @@ const data = [
     text: '',
     title: 'Wird wirklich alles anders?',
     type: 'rule',
-    creationDate: new Date(2020, 9, 5).toLocaleString(),
-    id: 5
+    creationDate: new Date(2020, 9, 5).toLocaleDateString(),
+    id: 5,
+    number: 5
   },
   {
     author: undefined,
@@ -68,8 +73,9 @@ const data = [
     text: '',
     title: 'Zeit für AR.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 6).toLocaleString(),
-    id: 6
+    creationDate: new Date(2020, 9, 6).toLocaleDateString(),
+    id: 6,
+    number: 6
   },
   {
     author: undefined,
@@ -80,8 +86,9 @@ const data = [
     text: '',
     title: 'Drive-in(to) normality.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 7).toLocaleString(),
-    id: 7
+    creationDate: new Date(2020, 9, 7).toLocaleDateString(),
+    id: 7,
+    number: 7
   },
   {
     author: undefined,
@@ -92,8 +99,9 @@ const data = [
     text: '',
     title: 'Brander-tainment 2.0',
     type: 'rule',
-    creationDate: new Date(2020, 9, 8).toLocaleString(),
-    id: 8
+    creationDate: new Date(2020, 9, 8).toLocaleDateString(),
+    id: 8,
+    number: 8
   },
   {
     author: undefined,
@@ -104,8 +112,9 @@ const data = [
     text: '',
     title: 'Improvisation in Isolation',
     type: 'rule',
-    creationDate: new Date(2020, 9, 9).toLocaleString(),
-    id: 9
+    creationDate: new Date(2020, 9, 9).toLocaleDateString(),
+    id: 9,
+    number: 9
   },
   {
     author: undefined,
@@ -116,8 +125,9 @@ const data = [
     text: '',
     title: 'Working from anywhere',
     type: 'rule',
-    creationDate: new Date(2020, 9, 10).toLocaleString(),
-    id: 10
+    creationDate: new Date(2020, 9, 10).toLocaleDateString(),
+    id: 10,
+    number: 10
   },
   {
     author: undefined,
@@ -128,8 +138,9 @@ const data = [
     text: '',
     title: 'Buy now, enjoy later.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 11).toLocaleString(),
-    id: 11
+    creationDate: new Date(2020, 9, 11).toLocaleDateString(),
+    id: 11,
+    number: 11
   },
   {
     author: undefined,
@@ -140,8 +151,9 @@ const data = [
     text: '',
     title: 'Von VR zu NR.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 12).toLocaleString(),
-    id: 12
+    creationDate: new Date(2020, 9, 12).toLocaleDateString(),
+    id: 12,
+    number: 12
   },
   {
     author: undefined,
@@ -152,8 +164,9 @@ const data = [
     text: '',
     title: 'OOH is dead. For now.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 13).toLocaleString(),
-    id: 13
+    creationDate: new Date(2020, 9, 13).toLocaleDateString(),
+    id: 13,
+    number: 13
   },
   {
     author: undefined,
@@ -164,8 +177,9 @@ const data = [
     text: '',
     title: 'Gemeinsam einsam.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 14).toLocaleString(),
-    id: 14
+    creationDate: new Date(2020, 9, 14).toLocaleDateString(),
+    id: 14,
+    number: 14
   },
   {
     author: undefined,
@@ -176,8 +190,9 @@ const data = [
     text: '',
     title: 'New Horizons für Gaming.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 15).toLocaleString(),
-    id: 15
+    creationDate: new Date(2020, 9, 15).toLocaleDateString(),
+    id: 15,
+    number: 15
   },
   {
     author: undefined,
@@ -188,8 +203,9 @@ const data = [
     text: '',
     title: 'Pawfect Playlists.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 17).toLocaleString(),
-    id: 17
+    creationDate: new Date(2020, 9, 17).toLocaleDateString(),
+    id: 17,
+    number: 17
   },
   {
     author: undefined,
@@ -200,8 +216,9 @@ const data = [
     text: '',
     title: 'Gratis gewinnt.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 18).toLocaleString(),
-    id: 18
+    creationDate: new Date(2020, 9, 18).toLocaleDateString(),
+    id: 18,
+    number: 18
   },
   {
     author: undefined,
@@ -212,8 +229,9 @@ const data = [
     text: '',
     title: 'Live ist das neue Life.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 19).toLocaleString(),
-    id: 19
+    creationDate: new Date(2020, 9, 19).toLocaleDateString(),
+    id: 19,
+    number: 19
   },
   {
     author: undefined,
@@ -224,8 +242,9 @@ const data = [
     text: '',
     title: 'Solidarität schlägt Profit.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 20).toLocaleString(),
-    id: 20
+    creationDate: new Date(2020, 9, 20).toLocaleDateString(),
+    id: 20,
+    number: 20
   },
   {
     author: undefined,
@@ -236,8 +255,9 @@ const data = [
     text: '',
     title: 'Jetzt schlau werden.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 21).toLocaleString(),
-    id: 21
+    creationDate: new Date(2020, 9, 21).toLocaleDateString(),
+    id: 21,
+    number: 21
   },
   {
     author: undefined,
@@ -248,8 +268,9 @@ const data = [
     text: '',
     title: 'Die bargeldlose Gewohnheit.',
     type: 'rule',
-    creationDate: new Date(2020, 9, 22).toLocaleString(),
-    id: 22
+    creationDate: new Date(2020, 9, 22).toLocaleDateString(),
+    id: 22,
+    number: 22
   },
   {
     author: undefined,
@@ -260,7 +281,7 @@ const data = [
     text: '',
     title: 'Jetzt kommt es zur Mutation',
     type: 'article',
-    creationDate: new Date(2020, 9, 23).toLocaleString(),
+    creationDate: new Date(2020, 9, 23).toLocaleDateString(),
     id: 23
   },
   {
@@ -272,7 +293,7 @@ const data = [
     text: '',
     title: 'Ovomaltine unterstützt beim Weg aus dem Lockdown und macht die Schweizerinnen und Schweizer fit für den Alltag draussen.',
     type: 'link',
-    creationDate: new Date(2020, 9, 24).toLocaleString(),
+    creationDate: new Date(2020, 9, 24).toLocaleDateString(),
     id: 24
   },
   {
@@ -284,7 +305,7 @@ const data = [
     text: '',
     title: 'There is Art in Artificial',
     type: 'article',
-    creationDate: new Date(2020, 9, 25).toLocaleString(),
+    creationDate: new Date(2020, 9, 25).toLocaleDateString(),
     id: 25
   },
   {
@@ -296,7 +317,7 @@ const data = [
     text: '',
     title: 'Media-Chance in Zeiten von Corona',
     type: 'article',
-    creationDate: new Date(2020, 9, 26).toLocaleString(),
+    creationDate: new Date(2020, 9, 26).toLocaleDateString(),
     id: 26
   },
   {
@@ -308,7 +329,7 @@ const data = [
     text: '',
     title: 'Von Krisen und Chancen: Wie sich Marken jetzt verhalten sollten',
     type: 'article',
-    creationDate: new Date(2020, 9, 27).toLocaleString(),
+    creationDate: new Date(2020, 9, 27).toLocaleDateString(),
     id: 27
   },
   {
@@ -320,7 +341,7 @@ const data = [
     text: '',
     title: 'NO1: Firstworld Fastenzeit.',
     type: 'article',
-    creationDate: new Date(2020, 9, 28).toLocaleString(),
+    creationDate: new Date(2020, 9, 28).toLocaleDateString(),
     id: 28
   },
   {
@@ -332,7 +353,7 @@ const data = [
     text: '',
     title: '#1 Why Performance matters?',
     type: 'article',
-    creationDate: new Date(2020, 9, 29).toLocaleString(),
+    creationDate: new Date(2020, 9, 29).toLocaleDateString(),
     id: 29
   },
   {
@@ -344,7 +365,7 @@ const data = [
     text: '',
     title: 'Nike: We are never too far down to come back.',
     type: 'link',
-    creationDate: new Date(2020, 9, 30).toLocaleString(),
+    creationDate: new Date(2020, 9, 30).toLocaleDateString(),
     id: 30
   },
   {
@@ -356,7 +377,7 @@ const data = [
     text: '',
     title: 'Mit natürlichen Repellents gegen das Coronavirus.',
     type: 'link',
-    creationDate: new Date(2020, 9, 31).toLocaleString(),
+    creationDate: new Date(2020, 9, 31).toLocaleDateString(),
     id: 31
   },
   {
@@ -368,7 +389,7 @@ const data = [
     text: '',
     title: 'Ersatz für die physische Speisekarte in Covid-19 Zeiten',
     type: 'link',
-    creationDate: new Date(2020, 10, 1).toLocaleString(),
+    creationDate: new Date(2020, 10, 1).toLocaleDateString(),
     id: 32
   },
   {
@@ -380,7 +401,7 @@ const data = [
     text: '',
     title: 'Google Schweiz mit Massnahmen-Checkliste für den stationären Handel',
     type: 'link',
-    creationDate: new Date(2020, 9, 2).toLocaleString(),
+    creationDate: new Date(2020, 9, 2).toLocaleDateString(),
     id: 33
   },
   {
@@ -392,7 +413,7 @@ const data = [
     text: '',
     title: '"Jetzt geht es um Nähe und Authentizität"',
     type: 'link',
-    creationDate: new Date(2020, 9, 3).toLocaleString(),
+    creationDate: new Date(2020, 9, 3).toLocaleDateString(),
     id: 34
   }
 ]

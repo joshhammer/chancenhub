@@ -22,7 +22,7 @@ export default {
   components: { Logo, Navigation, Call, Phone },
   data () {
     return {
-      filterValue: 'rule'
+      filterValue: ''
     }
   },
   watch: {

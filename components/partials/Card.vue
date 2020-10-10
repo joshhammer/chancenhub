@@ -4,8 +4,8 @@
       <p>{{ type === 'rule' ? '#Spielregeln' : type === 'article' ? '#Artikel' : '#Bestpractice' }}</p>
       <h1 :style="titleSize">{{ title }}</h1>
     </div>
-    <div class="card__overlay">
-      <h2 v-if="type === 'rule'">#{{ cardId }}</h2>
+    <div v-if="type === 'rule' && number " class="card__overlay">
+      <h2>#{{ number }}</h2>
     </div>
   </a>
 </template>
@@ -27,6 +27,10 @@ export default {
       default: null
     },
     cardId: {
+      type: Number,
+      default: null
+    },
+    number: {
       type: Number,
       default: null
     },

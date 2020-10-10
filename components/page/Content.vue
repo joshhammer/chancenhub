@@ -5,6 +5,7 @@
         v-for="card in sortedAndFilteredCards"
         :key="card.id"
         :card-id="card.id"
+        :number="card.number"
         :title="card.title"
         :creation-date="card.creationDate"
         :type="card.type"
@@ -23,8 +24,7 @@ export default {
   components: { Card },
   props: {
     filterValue: {
-      type: String,
-      default: 'all'
+      type: String
     }
   },
   data () {
