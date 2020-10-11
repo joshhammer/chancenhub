@@ -1,5 +1,5 @@
 <template>
-  <a :href="link.uri" class="card card__animated" :style="{ backgroundColor: backgroundColor }">
+  <a :href="link.uri" class="card card__animated" target="_blank" rel="noopener noreferrer" :style="{ backgroundColor: backgroundColor }">
     <div class="card__inner">
       <p>{{ type === 'rule' ? '#Spielregeln' : type === 'article' ? '#Artikel' : '#Bestpractice' }}</p>
       <h1 :style="titleSize">{{ title }}</h1>
