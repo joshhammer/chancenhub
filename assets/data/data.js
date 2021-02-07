@@ -203,7 +203,7 @@ const data = [
     },
     backgroundColor: '#E94BB0',
     text: '',
-    title: 'New Horizons für Gaming.',
+    title: 'Lang lebe TV.',
     type: 'rule',
     creationDate: new Date(2020, 7, 31).toLocaleDateString(),
     id: 16,

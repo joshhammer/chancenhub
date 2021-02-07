@@ -42,7 +42,6 @@ export default {
         padding: .5rem -.75rem;
       }
     @media (max-width: 768px) {
-        // padding: .5rem .75rem;
         padding: 0;
         background-color: transparent;
       }
